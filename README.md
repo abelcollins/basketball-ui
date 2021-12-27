@@ -1,3 +1,2 @@
 # basketball-ui
-## H1
-### h
+## the react ui for our basketball app
