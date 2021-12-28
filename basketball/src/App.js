@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/navbar"
 import Home from "./pages/home"
 import Friends from "./pages/friends"
@@ -10,12 +10,12 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Routes >
+      <Switch >
         <Route path='/' exact component={Home} />
         <Route path='/friends' exact component={Friends} />
         <Route path='/settings' exact component={Settings} />
-        <Route path='/parks' exact component={Park} />
-      </Routes >
+        <Route path='/park' exact component={Park} />
+      </Switch >
     </Router>
   );
 }

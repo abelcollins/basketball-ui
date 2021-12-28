@@ -4,9 +4,7 @@ const Park = () =>{
   return (
     <div>
       <h3>Park</h3>
-      <img src={picture}> </img>
-      <div>
-      </div>
+      <img src={picture} alt="park" width={300} height={300}/>
     </div>
   );
 }
