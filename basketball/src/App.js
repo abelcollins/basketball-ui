@@ -10,12 +10,12 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
+      <Routes >
         <Route path='/' exact component={Home} />
-        <Route path='/cats' component={Friends} />
-        <Route path='/sheeps' component={Settings} />
-        <Route path='/goats' component={Park} />
-      </Routes>
+        <Route path='/friends' exact component={Friends} />
+        <Route path='/settings' exact component={Settings} />
+        <Route path='/parks' exact component={Park} />
+      </Routes >
     </Router>
   );
 }
